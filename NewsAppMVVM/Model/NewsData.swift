@@ -7,6 +7,13 @@
 
 import Foundation
 
+
+struct NewsEnvelope : Decodable {
+    let status : String
+    let totalResults : Int
+    let articles : [News]
+}
+
 struct News : Decodable {
     
     let author : String?
@@ -15,10 +22,4 @@ struct News : Decodable {
     let urlToImage : String?
     let url : String?
     
-}
-
-struct NewsEnvelope : Decodable {
-    let status : String
-    let totalResults : Int
-    let articles : [News]
 }

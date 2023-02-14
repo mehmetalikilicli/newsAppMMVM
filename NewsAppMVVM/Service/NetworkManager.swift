@@ -56,8 +56,5 @@ class NetworkManager {
                 completion(data)
             }.resume()
         }
-        
-        
     }
-    
 }
